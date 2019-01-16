@@ -1,0 +1,567 @@
+/*-----------------------------全局样式-------------------------------------*/
+dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,span,a,input,textarea,p,blockquote,th,td,header,nav,footer,article,section,aside,time,figure{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+h1,h2,h3,h4,h5,h6{font-size:14px;font-weight:normal}
+html {
+ 	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	font-family: STXihei, "华文细黑","microsoft yahei";
+	position: relative;
+	margin: 0;
+	min-width: 320px;
+	height: 100%;
+	background: #2e3139;
+	overflow: hidden;
+	color: #fff;
+}
+/*-----------------------------框架-------------------------------------*/
+/*.swiper-container{position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;overflow:hidden}
+.swiper-slide{height:100%;position:relative;overflow:hidden}*/
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+}
+.on:before{
+	content: url(../img/3.7/on.png);
+	display: block;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 13px;
+	left: 13px;	
+	z-index: 2000;
+}
+.up{position:absolute;left:0;right:0;bottom:0;width:48px;height:37px;margin:auto;z-index:1000}
+.ups{width:48px;height:37px;background:url(../img/3.7/arrows.png) no-repeat;background-size:100%;z-index:100;animation:up 1s ease-in infinite;-moz-animation:up 1s ease-in infinite;-webkit-animation:up 1s ease-in infinite;position:absolute;left:0;bottom:10px}
+@-keyframes up{0%{bottom:0;opacity:0}50%{bottom:10px;opacity:1}100%{bottom:20px;opacity:0}}
+@-moz-keyframes up{0%{bottom:0;opacity:0}50%{bottom:10px;opacity:1}100%{bottom:20px;opacity:0}}
+@-webkit-keyframes up{0%{bottom:0;opacity:0}50%{bottom:10px;opacity:1}100%{bottom:20px;opacity:0}}
+
+.btn {
+	position: absolute;
+	bottom: 70px;
+	left: 50%;
+	margin-left: -70.5px;
+	display: none;
+}
+.hidden {display: none;}
+.infinite{animation-iteration-count: infinite;-webkit-animation-iteration-count: infinite;-moz-animation-iteration-count: infinite;}
+.delay-half{animation-delay: 0.5s;-webkit-animation-delay: 0.5s;-moz-animation-delay: 0.5s;}
+.delay-1{animation-delay: 1s;-webkit-animation-delay: 1s;-moz-animation-delay: 1s;}
+.delay-1-half{animation-delay: 1.5s;-webkit-animation-delay: 1.5s;-moz-animation-delay: 1.5s;}
+.delay-2{animation-delay: 2s;-webkit-animation-delay: 2s;-moz-animation-delay: 2s;}
+.delay-2-half{animation-delay: 2.5s;-webkit-animation-delay: 2.5s;-moz-animation-delay: 2.5s;}
+.delay-3{animation-delay: 3s;-webkit-animation-delay: 3s;-moz-animation-delay: 3s;}
+.delay-3-half{animation-delay: 3.5s;-webkit-animation-delay: 3.5s;-moz-animation-delay: 3.5s;}
+.delay-4{animation-delay: 4s;-webkit-animation-delay: 4s;-moz-animation-delay: 4s;}
+.delay-4-half{animation-delay: 4.5s;-webkit-animation-delay: 4.5s;-moz-animation-delay: 4.5s;}
+
+/*----------------第一屏---------------------*/
+.pageone {
+	background: url(../img/3.7/1/bg.png);
+	background-size: cover;
+	background-position: 50% 0%;	
+}
+.pageone-1{
+	top: 300px;
+	left: 50%;
+	margin-left: -177px;
+	position: absolute;
+}
+/*----------------第二屏---------------------*/
+.pagetwo {
+	background: url(../img/3.7/2/bg.png);
+	background-size: cover;
+	background-position: 50% 0%;	
+}
+.pagetwo-1 {
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	margin-left: -177px;
+}
+.pagetwo-2 {
+	position: absolute;
+	top: 380px;
+	left: 50%;
+	margin-left: -177px;
+}
+.pagetwo-select-1 {
+	width: 350px;
+	height: 60px;
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	margin-left: -175px;
+	background: #3CA8D9;
+	border-radius: 4px;
+	border: 3px solid rgba(0,0,0,0.2);
+	font-size: 30px;
+	color: #2E3139;
+	font-family: "microsoft yahei";
+}
+.pagetwo-select-2 {
+	width: 350px;
+	height: 60px;
+	position: absolute;
+	top: 490px;
+	left: 50%;
+	margin-left: -175px;
+	background: #3CA8D9;
+	border-radius: 4px;
+	border: 3px solid rgba(0,0,0,0.2);
+	font-size: 30px;
+	color: #2E3139;
+	font-family: "microsoft yahei";
+}
+/*----------------第三屏---------------------*/
+.pagethree {
+	background-image: url(../img/3.7/3/bg.png);
+	background-size: cover;
+	background-position: 50% 0%;
+}
+
+.pagethree-1 {
+	position: absolute;
+	left: 142px;
+	top: 160px;
+	background: url(../img/3.7/3/1.png);
+	width: 277px;
+	height: 50px;
+}
+
+.pagethree-2 {
+	position: absolute;
+	left: 142px;
+	top: 260px;
+	background: url(../img/3.7/3/2.png);
+	width: 340px;
+	height: 50px;
+}
+.pagethree-3 {
+	position: absolute;
+	left: 142px;
+	top: 360px;
+	background: url(../img/3.7/3/3.png);
+	width: 310px;
+	height: 50px;
+}
+.pagethree-4 {
+	position: absolute;
+	left: 142px;
+	top: 460px;
+	background: url(../img/3.7/3/4.png);
+	width: 336px;
+	height: 50px;
+}
+.pagethree-5 {
+	position: absolute;
+	left: 142px;
+	top: 560px;
+	background: url(../img/3.7/3/5.png);
+	width: 280px;
+	height: 50px;
+}
+.pagethree-6 {
+	position: absolute;
+	left: 142px;
+	top: 660px;
+	background: url(../img/3.7/3/6.png);
+	width: 160px;
+	height: 50px;
+}
+/*----------------第四屏---------------------*/
+.pagefour {
+	background-image: url(../img/3.7/4/bg.png);
+	background-size: cover;
+	background-position: 50% 0%;
+}
+.pagefour-1 {
+	position: absolute;
+	left: 90px;
+	top: 200px;
+	width: 496px;
+	height: 59px;
+	background: url(../img/3.7/4/1.png);
+}
+.pagefour-1.on:before{
+	top: 18px;
+	left: 13.5px;
+}
+.pagefour-2.on:before{
+	top: 23px;
+	left: 13.5px;
+}
+.pagefour-3.on:before{
+	top: 39px;
+	left: 13.5px;
+}
+.pagefour-2 {
+	position: absolute;
+	left: 90px;
+	top: 350px;
+	width: 541px;
+	height: 73px;
+	background: url(../img/3.7/4/2.png);
+}
+.pagefour-3 {
+	position: absolute;
+	left: 90px;
+	top: 500px;
+	width: 496px;
+	height: 103px;
+	background: url(../img/3.7/4/3.png);
+}
+/*----------------第五屏---------------------*/
+.pagefive {
+	background-image: url(../img/3.7/5/bg.png);
+	background-size: cover;
+	background-position: 50% 0%;
+}
+.pagefive-1 {
+	position: absolute;
+	left: 100px;
+	top: 150px;
+}
+.pagefive-2 {
+	position: absolute;
+	left: 100px;
+	top: 490px;
+}
+.pagefive-select-1 {
+	width: 350px;
+	height: 60px;
+	position: absolute;
+	top: 150px;
+	left: 175px;
+	background: #3CA8D9;
+	border-radius: 4px;
+	border: 3px solid rgba(0,0,0,0.2);
+	font-size: 30px;
+	color: #2E3139;
+	font-family: "microsoft yahei";
+}
+.pagefive-select-2 {
+	width: 350px;
+	height: 60px;
+	position: absolute;
+	top: 490px;
+	left: 175px;
+	background: #3CA8D9;
+	border-radius: 4px;
+	border: 3px solid rgba(0,0,0,0.2);
+	font-size: 30px;
+	color: #2E3139;
+	font-family: "microsoft yahei";
+}
+/*----------------第六屏---------------------*/
+.pagesix {
+	background-image: url(../img/3.7/6/bg.png);
+	background-size: cover;
+	background-position: 50% 0%;
+}
+.pagesix-1 {
+	position: absolute;
+	top: 190px;
+	left: 142px;
+	width: 280px;
+	height: 50px;
+	background: url(../img/3.7/6/1.png);
+}
+.pagesix-2 {
+	position: absolute;
+	top: 310px;
+	left: 142px;
+	width: 400px;
+	height: 50px;
+	background: url(../img/3.7/6/2.png);
+}
+.pagesix-3 {
+	position: absolute;
+	top: 430px;
+	left: 142px;
+	width: 397px;
+	height: 50px;
+	background: url(../img/3.7/6/3.png);
+}
+.pagesix-4 {
+	position: absolute;
+	top: 550px;
+	left: 142px;
+	width: 336px;
+	height: 50px;
+	background: url(../img/3.7/6/4.png);
+}
+.pagesix-5 {
+	position: absolute;
+	top: 670px;
+	left: 142px;
+	width: 160px;
+	height: 50px;
+	background: url(../img/3.7/6/5.png);
+}
+/*----------------第七屏---------------------*/
+.pageseven {
+	background-image: url(../img/3.7/7/bg.png);
+	background-size: cover;
+	background-position: 50% 0%;
+}
+.pageseven .on:before {
+	content: url(../img/3.7/7/on.png);
+	width: 46px;
+	height: 64px;
+	top: 0px;
+	left: 0px;
+}
+.pageseven-1 {
+	position: absolute;
+	left: 134px;
+	top: 180px;
+	width: 284px;
+	height: 64px;
+	background: url(../img/3.7/7/1.png);
+}
+.pageseven-2 {
+	position: absolute;
+	left: 134px;
+	top: 300px;
+	width: 315px;
+	height: 64px;
+	background: url(../img/3.7/7/2.png);
+}
+.pageseven-3 {
+	position: absolute;
+	left: 134px;
+	top: 420px;
+	width: 254px;
+	height: 64px;
+	background: url(../img/3.7/7/3.png);
+}
+.pageseven-4 {
+	position: absolute;
+	left: 134px;
+	top: 540px;
+	width: 285px;
+	height: 64px;
+	background: url(../img/3.7/7/4.png);
+}
+.pageseven-5 {
+	position: absolute;
+	left: 134px;
+	top: 660px;
+	width: 164px;
+	height: 64px;
+	background: url(../img/3.7/7/5.png);
+}
+
+/*----------------第八屏---------------------*/
+.pageeight {
+	background-image: url(../img/3.7/8/bg.png);
+	background-size: cover;
+	background-position: 50% 0%;
+}
+.pageeight-1 {
+	position: absolute;
+	left: 90px;
+	top: 200px;
+	width: 345px;
+	height: 80px;
+	background: url(../img/3.7/8/1.png);
+}
+.pageeight-2 {
+	position: absolute;
+	left: 90px;
+	top: 400px;
+	width: 345px;
+	height: 80px;
+	background: url(../img/3.7/8/2.png);
+}
+.pageeight-3 {
+	position: absolute;
+	left: 90px;
+	top: 600px;
+	width: 445px;
+	height: 80px;
+	background: url(../img/3.7/8/3.png);
+}
+.pageeight .on:before {
+	top: 28.5px;
+	left: 13.5px;
+}
+/*----------------第九屏---------------------*/
+.pagenine {
+	background-image: url(../img/3.7/9/bg.png);
+	background-size: cover;
+	background-position: 50% 0%;
+}
+.pagenine-1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.pagenine-p1,.pagenine-p2,.pagenine-p3,.pagenine-p4,.pagenine-p5,.pagenine-p6 {
+	font-size: 25px;
+	color: #3CA8D9;
+	position: absolute;
+	left: 100px;
+	width: 350px;
+}
+.pagenine-p1 {
+	top: 190px;
+}
+.pagenine-p2 {
+	top: 320px;
+}
+.pagenine-p3 {
+	top: 470px;
+}
+.pagenine-p4 {
+	top: 630px;
+}
+.pagenine-p5 {
+	top: 740px;
+}
+.pagenine-p6 {
+	top: 890px;
+}
+.pagenine-per1,.pagenine-per2,.pagenine-per3,.pagenine-per4,.pagenine-per5,.pagenine-per6 {
+	font-size: 45px;
+	color: #ffffff;
+	position: absolute;
+	left: 515px;
+	font-family: arial;
+}
+.pagenine-per1 {
+	top: 135px;
+}
+.pagenine-per2 {
+	top: 275px;
+}
+.pagenine-per3 {
+	top: 415px;
+}
+.pagenine-per4 {
+	top: 555px;
+}
+.pagenine-per5 {
+	top: 695px;
+}
+.pagenine-per6 {
+	top: 835px;
+}
+.pagenine-per1:after,.pagenine-per2:after,.pagenine-per3:after,.pagenine-per4:after,.pagenine-per5:after,.pagenine-per6:after {
+	font-size: 25px;
+	content: '%';
+	color: #ffffff;
+	position: absolute;
+	top: 0px;
+}
+/*------------------------------------*\
+    $progress-ring
+\*------------------------------------*/
+@-webkit-keyframes toggle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes toggle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.progress-ring {
+  position: absolute;
+  height: 130px;
+  width: 130px;
+}
+.progress-ring-1 {
+	top: 100px;
+	left: 50%;
+	margin: -75px;
+}
+.progress-ring-2 {
+	top: 300px;
+	left: 50%;
+	margin: -75px;
+}
+.progress-ring-3 {
+	top: 500px;
+	left: 50%;
+	margin: -75px;
+}
+.progress-ring div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 130px;
+  width: 130px;
+  /* 圆环宽高，可自定义 */
+  border: 16.25px solid transparent;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.progress-left {
+	border-width: 14px!important;
+  border: 14px solid transparent;
+}
+
+.progress-ring .progress-left,
+.progress-ring .progress-right,
+.progress-ring .progress-cover {
+  clip: rect(0 65px 130px 0);/* rect( [0 | <width/2> | <height> | 0] ) */
+}
+.progress-ring .progress-right {
+  opacity: 0;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.progress-ring .progress-text {
+  border: none;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  font-size: 32.5px;
+  color: #949494;
+  /* 进度文字颜色 */
+  line-height: 130px;
+}
+.progress-ring .progress-percent {
+  font-size: .5em;
+  font-style: italic;
+  font-family: "Microsoft Yahei", sans-serif;
+}
+.adaption {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  height: 100%;
+}
+/*@media only screen and (max-height: 1000px) {
+	
+.pagetwo-1{position: absolute;left: 0%;  bottom: 0px;}
+.pagetwo-2{position: absolute;right: 0%; top:80px;}
+.pagetwo-3{position: absolute;left:50%;margin-left:10px;top: 400px;}
+.pagetwo-4{position: absolute;left:50%;margin-left:39px;top:440px;}
+	
+.pageeight-1{position:absolute; left:50%; margin-left: -8px;top: 62%;}
+.pageeight-2{position:absolute; left:50%; margin-left: -266px; bottom: 5%;}
+}*/
+
+
+

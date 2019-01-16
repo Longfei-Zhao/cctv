@@ -1,0 +1,502 @@
+/*-----------------------------全局样式-------------------------------------*/
+dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,span,a,input,textarea,p,blockquote,th,td,header,nav,footer,article,section,aside,time,figure{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+h1,h2,h3,h4,h5,h6{font-size:14px;font-weight:normal}
+ul{list-style:none}
+legend{display:none;}
+fieldset,img{border:none;vertical-align:middle}
+em,cite,i{font-style:normal}
+input,button,textarea{outline:none;border:0;vertical-align:middle;border:0;font-family:Microsoft YaHei}
+input[type="submit"],input[type="reset"],input[type="button"],button {-webkit-appearance:none;border-radius:0}
+select{-webkit-appearance:none;-moz-appearance:none;appearance:none}
+textarea{resize:none}
+html{height:100%;-webkit-text-size-adjust:none;overflow:hidden}
+body {
+	font: 12px/18px Microsoft YaHei;
+	font-family: helvetica;
+	position: relative;
+	margin: 0;
+	color: #000;
+	min-width: 320px;
+	word-break: break-all;
+	height: 100%;
+	background: #2e3139;
+	overflow: hidden;
+	color: #fff;
+}body a{color:#fff;text-decoration:none;cursor:pointer}
+body a:hover,body a:active,body a:focus{text-decoration:none;outline:none}
+/*-----------------------------框架-------------------------------------*/
+#wrapper{position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;overflow:hidden}
+.iScrollVerticalScrollbar{position:absolute;right:0;top:0;height:100%;width:4px}
+.iScrollIndicator{position:absolute;right:0;background:rgba(255,255,255,0.2);width:4px;border-radius:2px}
+.page{width:100%;position:relative;overflow:hidden;height:100%}
+.full-img img{width:100%;display:block}
+.auto-x{left:0;right:0;position:absolute;margin:auto}
+.auto-y{top:0;bottom:0;position:absolute;margin:auto}
+.swiper-container{position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;overflow:hidden}
+.swiper-slide{height:100%;position:relative;overflow:hidden}
+.up{position:absolute;left:0;right:0;bottom:0;width:48px;height:37px;margin:auto;z-index:1000}
+.ups{width:48px;height:37px;background:url(../img/arrows.png) no-repeat;background-size:100%;z-index:100;animation:up 1s ease-in infinite;-moz-animation:up 1s ease-in infinite;-webkit-animation:up 1s ease-in infinite;position:absolute;left:0;bottom:10px}
+@-keyframes up{0%{bottom:0;opacity:0}50%{bottom:10px;opacity:1}100%{bottom:20px;opacity:0}}
+@-moz-keyframes up{0%{bottom:0;opacity:0}50%{bottom:10px;opacity:1}100%{bottom:20px;opacity:0}}
+@-webkit-keyframes up{0%{bottom:0;opacity:0}50%{bottom:10px;opacity:1}100%{bottom:20px;opacity:0}}
+
+.hidden {display: none;}
+.infinite{animation-iteration-count: infinite;-webkit-animation-iteration-count: infinite;-moz-animation-iteration-count: infinite;}
+
+/*----------------第一屏---------------------*/
+.pageone-1{
+	top: 0;
+	left: 50%;
+	margin-left: -320px;
+	position: absolute;
+}
+.pageone-2{
+	bottom: 0;
+	left: 50%;
+	margin-left: -320px;
+	position: absolute;
+	z-index: 1000;
+}
+.pageone-3{
+	top: 15%;
+	left: 50%;
+	margin-left: -178px;
+	position: absolute;
+}
+.pageone-4{
+	bottom: 500px;
+	left: 50%;
+	margin-left: -321.5px;
+	position: absolute;
+}
+.pageone-5{
+	bottom: 388px;
+	left: 327.5px;
+	position: absolute;
+	z-index: 1005;
+}
+.pageone-6{
+	bottom: 75px;
+	left: 50%;
+	margin-left: -33px;
+	position: absolute;
+	z-index: 1002;
+}
+.pageone-7{
+	bottom: 54px;
+	left: 50%;
+	margin-left: -54.5px;
+	position: absolute;
+	z-index: 1001;
+}
+.pageone-text1 {
+	position: absolute;
+	right: 640px;
+	bottom: 432px;
+	z-index: 1001;
+	animation: pageone-text  4s;
+	-webkit-animation: pageone-text  4s;	/* Safari 和 Chrome */
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+.pageone-text2 {
+	position: absolute;
+	right: 640px;
+	bottom: 468px;
+	z-index: 1002;
+	animation: pageone-text  5s;
+	-webkit-animation: pageone-text  5s;	/* Safari 和 Chrome */
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+.pageone-text3 {
+	position: absolute;
+	right: 640px;
+	bottom: 385px;
+	z-index: 1002;
+	animation: pageone-text  6s;
+	-webkit-animation: pageone-text  6s;	/* Safari 和 Chrome */
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes pageone-text {
+	0% {
+    	right: 640px;
+  	}
+  	100% {
+    	right: -600px;
+  	}
+}
+@-webkit-keyframes rotate {
+	0% {
+    	-webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+  	}
+  	100% {
+    	-webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+  	}
+}
+.rotate {
+	animation: rotate 2s;
+	-moz-animation: rotate 2s;	/* Firefox */
+	-webkit-animation: rotate 2s;	/* Safari 和 Chrome */
+	-o-animation: rotate 2s;	/* Opera */
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+}
+/*----------------第二屏---------------------*/
+.pagetwo {
+	background: url(../img/3.14/2/bg.png);
+	background-size: cover;
+	background-position: 50% 0%;	
+}
+#pagetwo-Chart1 {
+	position: absolute;
+	top: 183px;
+	left: 54px;
+}
+.pagetwo-1 {
+	position: absolute;
+	top: 96px;
+	left: -30px;
+}
+.pagetwo-2 {
+	position: absolute;
+	top: 600px;
+	left: 50%;
+	margin-left: -201.5px;
+}
+.pagetwo-3 {
+	position: absolute;
+	top: 770px;
+	left: 50%;
+	margin-left: -210px;
+}
+/*----------------第三屏---------------------*/
+.pagethree {
+	background-image: url(../img/3.14/3/bg.png);
+	background-size: cover;
+	background-position: 50% 0%;
+}
+.pagethree-1 {
+	position: absolute;
+	left: 50%;
+	margin-left: -222px;
+	top: 142px;
+}
+.pagethree-2 {
+	position: absolute;
+	left: 50px;
+	top: 130px;
+}
+.pagethree-3 {
+	position: absolute;
+	left: 510px;
+	top: 131px;
+}
+.pagethree-4 {
+	position: absolute;
+	top: 360px;
+	left: 50%;
+	margin-left: -180px;
+}
+.pagethree-5 {
+	position: absolute;
+	top: 250px;
+	left: 45px;
+}
+.pagethree-6 {
+	position: absolute;
+	top: 280px;
+	left: 200px;
+}
+.pagethree-7 {
+	position: absolute;
+	top: 280px;
+	left: 350px;
+}
+.pagethree-8 {
+	position: absolute;
+	top: 280px;
+	left: 500px;
+}
+.pagethree-9 {
+	position: absolute;
+	top: 540px;
+	left: 20px;
+}
+.pagethree-10 {
+	position: absolute;
+	top: 680px;
+	left: 320px;
+}
+/*----------------第四屏---------------------*/
+.pagefour {
+	background-image: url(../img/3.14/4/bg.png);
+	background-size: cover;
+	background-position: 50% 0%;
+}
+.pagefour-1 {
+	position: absolute;
+	left: 48px;
+	top: 170px;
+}
+.pagefour-2 {
+	position: absolute;
+	left: 192px;
+	top: 170px;
+}
+.pagefour-3 {
+	position: absolute;
+	left: 337px;
+	top: 170px;
+}
+.pagefour-4 {
+	position: absolute;
+	top: 170px;
+	left: 481px;
+}
+/*----------------第五屏---------------------*/
+.pagefive {
+	background-image: url(../img/3.14/5/bg.png);
+	background-size: cover;
+	background-position: 50% 0%;
+}
+.pagefive-1, .pagefive-2, .pagefive-3 {
+	position: absolute;
+	left: 50%;
+	margin-left: -31px;
+}
+.pagefive-1 {
+	top: 189px;
+}
+.pagefive-2 {
+	top: 422px;
+}
+.pagefive-3 {
+	top: 654px;
+}
+.pagefive-4 {
+	position: absolute;
+	left: 50%;
+	margin-left: -281px;
+	top: 868px;
+}
+.pagefive-leftline1 {
+	height: 1px;
+	background: #ffffff;
+	position: absolute;
+	top: 321px;
+	right: 386px;
+}
+.pagefive-leftline2 {
+	height: 1px;
+	background: #ffffff;
+	position: absolute;
+	top: 783px;
+	right: 386px;
+}
+.pagefive-rightline1 {
+	height: 1px;
+	background: #8eeeff;
+	position: absolute;
+	top: 550px;
+	left: 386px;
+}
+.pagefive-line {
+	animation: pagefive-line 1s;
+	-moz-animation: pagefive-line 1s;	/* Firefox */
+	-webkit-animation: pagefive-line 1s;	/* Safari 和 Chrome */
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes pagefive-line {
+	0% {
+    	width: 0px;
+  	}
+  	100% {
+    	width: 209px;
+  	}
+}
+
+.pagefive-left-1 {
+	position: absolute;
+	top: 314px;
+	right: 386px;
+}
+.pagefive-left-2 {
+	position: absolute;
+	top: 777px;
+	right: 386px;
+}
+.pagefive-right-1 {
+	position: absolute;
+	top: 543px;
+	left: 386px;
+}
+.pagefive-left {
+	animation: pagefive-left 1s;
+	-webkit-animation: pagefive-left 1s;	/* Safari 和 Chrome */
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+}
+.pagefive-right {
+	animation: pagefive-right 1s;
+	-webkit-animation: pagefive-right 1s;	/* Safari 和 Chrome */
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes pagefive-left {
+	0% {
+    	right: 386px;
+  	}
+  	100% {
+    	right: 595px;
+  	}
+}
+@-webkit-keyframes pagefive-right {
+	0% {
+    	left: 386px;
+  	}
+  	100% {
+    	left:595px;
+  	}
+}
+.pagefive-left1 {
+	position: absolute;
+	top: 288px;
+	left: 50px;
+}
+.pagefive-left2 {
+	position: absolute;
+	top: 464px;
+	left: 41px;
+}
+.pagefive-left3 {
+	position: absolute;
+	top: 515px;
+	right: 386px;
+}
+.pagefive-left4 {
+	position: absolute;
+	top: 585px;
+	left: 154px;
+}
+.pagefive-left5 {
+	position: absolute;
+	top: 755px;
+	left: 47px;
+}
+
+.pagefive-right1 {
+	position: absolute;
+	top: 214px;
+	left: 412px;
+}
+.pagefive-right2 {
+	position: absolute;
+	top: 270px;
+	left: 386px;
+}
+.pagefive-right3 {
+	position: absolute;
+	top: 333px;
+	left: 388px;
+}
+.pagefive-right4 {
+	position: absolute;
+	top: 519px;
+	left: 395px;
+}
+.pagefive-right5 {
+	position: absolute;
+	top: 683px;
+	left: 404px;
+}
+.pagefive-right6 {
+	position: absolute;
+	top: 734px;
+	left: 386px;
+}
+.pagefive-right7 {
+	position: absolute;
+	top: 798px;
+	left: 388px;
+}
+
+#pagefive-Chart1 {
+	position: absolute;
+	top: 256px;
+	left: 50%;
+	margin-left: -68px;
+}
+#pagefive-Chart2 {
+	position: absolute;
+	top: 488px;
+	left: 50%;
+	margin-left: -68px;
+}
+#pagefive-Chart3 {
+	position: absolute;
+	top: 721px;
+	left: 50%;
+	margin-left: -68px;
+}
+/*----------------第六屏---------------------*/
+.pagesix {
+	background-image: url(../img/3.14/6/bg.png);
+	background-size: cover;
+	background-position: 50% 0%;
+}
+.pagesix-1 {
+	position: absolute;
+	top: 175px;
+	left: 45px;
+}
+.pagesix-2 {
+	position: absolute;
+	top: 321px;
+	left: 45px;
+}
+.pagesix-3 {
+	position: absolute;
+	top: 467px;
+	left: 45px;
+}
+.pagesix-4 {
+	position: absolute;
+	top: 613px;
+	left: 45px;
+}
+.pagesix-5 {
+	position: absolute;
+	top: 759px;
+	left: 45px;
+}
+.delay-half{animation-delay: 0.5s;-webkit-animation-delay: 0.5s;-moz-animation-delay: 0.5s;}
+.delay-1{animation-delay: 1s;-webkit-animation-delay: 1s;-moz-animation-delay: 1s;}
+.delay-1-half{animation-delay: 1.5s;-webkit-animation-delay: 1.5s;-moz-animation-delay: 1.5s;}
+.delay-2{animation-delay: 2s;-webkit-animation-delay: 2s;-moz-animation-delay: 2s;}
+.delay-2-half{animation-delay: 2.5s;-webkit-animation-delay: 2.5s;-moz-animation-delay: 2.5s;}
+.delay-3{animation-delay: 3s;-webkit-animation-delay: 3s;-moz-animation-delay: 3s;}
+.delay-3-half{animation-delay: 3.5s;-webkit-animation-delay: 3.5s;-moz-animation-delay: 3.5s;}
+.delay-4{animation-delay: 4s;-webkit-animation-delay: 4s;-moz-animation-delay: 4s;}
+.delay-4-half{animation-delay: 4.5s;-webkit-animation-delay: 4.5s;-moz-animation-delay: 4.5s;}
+.delay-5{animation-delay: 5s;-webkit-animation-delay: 5s;-moz-animation-delay: 5s;}

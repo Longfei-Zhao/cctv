@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+        <link rel="stylesheet" href="css/pingfen.css" />
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">-->
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="MobileOptimized" content="320" />
+        <script type="text/javascript">
+            var phoneWidth = parseInt(window.screen.width);
+            var phoneScale = phoneWidth / 640;
+            var ua = navigator.userAgent;
+            if (/Android (\d+\.\d+)/.test(ua)) {
+                var version = parseFloat(RegExp.$1);
+                // andriod 2.3
+                if (version > 2.3) {
+                    document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+                    // andriod 2.3以上
+                } else {
+                    document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+                }
+                // 其他系统
+            } else {
+                document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+            } 
+            if(IsPC()){
+			    window.location.href = 'error.html';
+			}
+			function IsPC() {  
+			   var userAgentInfo = navigator.userAgent;  
+			   var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+			   var flag = true;  
+			   for (var v = 0; v < Agents.length; v++) {  
+			       if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
+			   }  
+			   return flag;  
+			}  
+        </script>
+        <script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "//hm.baidu.com/hm.js?b89957aa4d92c106623b800adcdef2e0";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+    </head>
+
+    <body>
+        <!--遮挡-->
+        <!--<div id="loading" style="display: block;"><p>0%</p></div>-->
+        <!--遮挡 end-->
+        <div class="swiper-container" id="mySwiper">
+            <div class="swiper-wrapper">
+            	<div class="swiper-slide pageone swiper-no-prev">
+            		<p class="q">本日最让人印象深刻的<span class="blue">嘉宾</span>及<span class="blue">话题</span></p>
+            		<div class="pageone-a">
+            			<img class="pageone-left" src="img/pingfen/1/left.png"/>
+            			<div class="pageone-right">
+            				<p class="jieshao">中国社会科学院美国研究所研究员</p>
+            				<p class="name">陶文钊</p>
+            				<p class="title">"中国的外交政策"</p>
+            			</div>
+            			<div class="js-pageone pagebtn">确定</div>
+            		</div>
+            		<div class="pageone-a">
+            			<img class="pageone-left" src="img/pingfen/1/left.png"/>
+            			<div class="pageone-right">
+            				<p class="jieshao">中国社会科学院美国研究所研究员</p>
+            				<p class="name">陶文钊</p>
+            				<p class="title">"中国的外交政策"</p>
+            			</div>
+            			
+            		</div>
+            		<div class="pageone-a">
+            			<img class="pageone-left" src="img/pingfen/1/left.png"/>
+            			<div class="pageone-right">
+            				<p class="jieshao">中国社会科学院美国研究所研究员</p>
+            				<p class="name">陶文钊</p>
+            				<p class="title">"中国的外交政策"</p>
+            			</div>
+            		</div>
+            		
+                </div>
+                <div class="swiper-slide pagetwo">
+                	<p class="q">本日最佳<span class="blue">大屏</span>和<span class="blue">题图</span></p>
+                	<div class="pagetwo-a">
+                		<img class="pagetwo-left" src="img/pingfen/2/left-1.png"/>
+                	</div>
+                	<div class="pagetwo-a">
+                		<div class="pagetwo-left">
+                			
+                		</div>
+                		<img class="pagetwo-left" src="img/pingfen/2/left-2.png"/>
+                	</div>
+                	<div class="pagetwo-a">
+                		<img class="pagetwo-left" src="img/pingfen/2/left-3.png"/>
+                	</div>
+                	<div class="js-pagetwo pagebtn">确定</div>
+                </div>
+                <div class="swiper-slide pagethree">
+                	<p class="q">今日你最关注的<span class="blue">新媒体平台</span></p>
+                	<div class="pagethree-a">
+                		<img class="pagetwo-left" src="img/pingfen/2/left-1.png"/>
+                	</div>
+                	<div class="pagethree-a">
+                		<img class="pagetwo-left" src="img/pingfen/2/left-1.png"/>
+                	</div>
+                	<div class="pagethree-a">
+                		<img class="pagetwo-left" src="img/pingfen/2/left-1.png"/>
+                	</div>
+                </div>
+                <div class="swiper-slide pagefour">
+                	
+                </div>
+                <div class="swiper-slide pagefive swiper-no-next">
+                	<img class="pagefive-1" src="img/5/1.png" />
+                	<div class="pagefive-2 water"></div>
+                	<div class="pagefive-2 water delay-1"></div>
+                	<img class="pagefive-3 hidden delay-half" src="img/5/3.png" />
+                	<img class="pagefive-4 hidden delay-1" src="img/5/4.png" />
+                	<img class="pagefive-5 hidden delay-1-half" src="img/5/5.png" />
+                	<img class="pagefive-6 hidden delay-2" src="img/5/6.png" />
+                </div>
+                
+                <!--<div class="swiper-slide pagesix">
+                </div>
+                <div class="swiper-slide pageseven">
+                </div>
+                <div class="swiper-slide pageeight">
+                </div>-->
+            </div>
+        </div>
+        <!--音乐 start-->
+        <!--<div id="music">
+            <div class="music" style=""></div>
+            <span>开启</span>
+            <audio src="img/music.mp3" id="mp3" autoplay="autoplay" loop></audio>
+        </div>-->
+        <!--音乐 end-->
+        <!--箭头-->
+        <div class="up" style="display: none;">
+            <div class="ups"></div>
+        </div>
+        <!--箭头 end-->
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/idangerous.swiper-2.6.1.min.js"></script>
+        <script type="text/javascript" src="js/preloadjs-0.4.1.min.js"></script>
+        <script src="js/Chart.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/progress-ring.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript">
+             // 加载图片
+            function loadImages()
+            {
+                var imgs = [];
+                $.each($('img'), function() {
+                    imgs.push($(this).attr('src'));
+                });
+                var loader = new createjs.LoadQueue();
+                //loader.installPlugin(createjs.Sound);
+                loader.setMaxConnections(30);
+                loader.on('complete', function() {
+                    // 加载完毕，初始化H5页面
+//                    init(loader);
+                    $('#loading').fadeOut();
+                    $(".pageone").children().removeClass('hidden');
+					$(".pageone-3").addClass('animated zoomInUp');
+					$(".pageone-5").addClass('animated zoomInUp');
+                    
+                });
+                loader.on('progress', function(e) {
+                    // 加载中
+                    $('#loading p').text(((this.progress + 0.000) * 100).toFixed(0) + '%');
+                });
+                loader.on('error', function() {
+                    alert("加载图片失败，请尝试重新进入页面");
+                });
+                loader.loadManifest(imgs);
+            }
+            $(function() {
+		        loadImages();
+		        
+		        $('.js-pageone').click(function(){
+		        	$('.pageone').fadeOut();
+		        	$('.pagetwo').show();
+		        })
+		        $('.js-pagetwo').click(function(){
+		        	$('.pagetwo').fadeOut();
+		        	$('.pagethree').show();
+		        })
+		    });
+        </script>
+        <script src="js/jweixin-1.0.0.js" type="text/javascript"></script>
+    </body>
+</html>
